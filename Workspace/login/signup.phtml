@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Register Client</title>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h3 class="text-center text-success">Registration</h3>
+    </div>
+
+    <form action='<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method="post">
+        <div class="row">
+            <div class="col">
+                <label for="nom">Nom</label>
+                <input type="text" placeholder="Wacef Essaies" name="nom" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Wacef.stratrait@gmail.com" name="email" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="pwd">Mot de passe</label>
+                <input type="password" placeholder="Le mot de passe doit contenir au moins 6 caractére" name="pwd" required>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <label for="cpwd">Confirmer mot de passe</label>
+                <input type="password" placeholder="Le mot de passe doit etre identique" name="cpwd" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label for="tel">Télèphone</label>
+                <input type="text" placeholder="12345678" name="tel" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="adresse">Adresse</label>
+                <input type="text" placeholder="Adresse" name="adresse" required>
+            </div>
+        </div>
+        
+
+        <input type="submit" class="btn btn-outline-success" value="Submit" name="signup">
+    </form>
+
+</div>
+    
+</body>
+</html>
